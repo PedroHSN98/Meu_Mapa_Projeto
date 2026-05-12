@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox 3D Pro</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <div class="console">
+    <h1>Mapbox 3D Pro</h1>
+    <p>Clique no mapa para marcar pontos.</p>
+    
+    <div id="results">Aguardando marcações...</div>
+
+    <div id="controls" style="display: none; margin-top: 15px; border-top: 1px solid #ccc; pt: 10px;">
+        <p><strong>O que deseja fazer?</strong></p>
+        <button onclick="confirmSave()" style="background: #27ae60; margin-bottom: 5px;">💾 Salvar Localizações</button>
+        <button onclick="continueEditing()" style="background: #f39c12; margin-bottom: 5px;">➕ Adicionar mais pontos</button>
+        <button onclick="clearPoints()" style="background: #c0392b;">🗑️ Apagar tudo</button>
+    </div>
+</div>
+
+    <script>
+        const mapboxToken = "{{ token }}";
+    </script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

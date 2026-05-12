@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+historico_rotas.json
+
+# Meus segredos e dados pessoais
+.env
+historico_rotas.json
