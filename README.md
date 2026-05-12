@@ -12,12 +12,6 @@ Este projeto é uma aplicação **Full Stack** profissional desenvolvida para de
 - **Histórico Estruturado (JSON):** Gravação automática de todas as consultas em um banco de dados local `historico_rotas.json`, incluindo carimbo de data/hora e metadados.
 - **Link de Partilha Universal:** Geração de uma URL formatada para o **Google Maps**, permitindo enviar a rota completa para amigos ou motoristas.
 
-## 🛡️ Segurança de Dados
-
-O projeto foi construído seguindo as melhores práticas de segurança:
-- **Variáveis de Ambiente:** O Access Token da Mapbox é gerido via ficheiro `.env`, nunca sendo exposto no código fonte.
-- **Proteção Git:** O ficheiro `.gitignore` está configurado para impedir o envio de chaves privadas e dados de histórico para repositórios públicos.
-
 ## 🛠️ Tecnologias Utilizadas
 
 - **Back-end:** Python 3 + Flask
